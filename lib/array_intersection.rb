@@ -5,9 +5,10 @@ def intersection(array1, array2)
 
   if array1 == nil || array2 == nil || array1 == [] || array2 == []
     return intersection
+  elsif array1.class != Array && array2.class != Array
+    raise ArgumentError
   end
 
-  raise ArgumentError unless (array1.class == Array && array2.class == Array)
 
   array1.length.times do |i|
     common_element = nil
