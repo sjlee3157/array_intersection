@@ -9,7 +9,6 @@ def intersection(array1, array2)
     raise ArgumentError
   end
 
-
   array1.length.times do |i|
     common_element = nil
     array2.length.times do |ii|
